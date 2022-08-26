@@ -26,6 +26,7 @@ body {
 
 .newGroceryForm {
     display: flex;
+    justify-content: center;
 }
 
 #newGrocery {
@@ -54,7 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--foreground);
-    align-items: center;
+    align-items: left;
     justify-content: center;
     margin-top: 2em;
     border-radius: 0.25em;
@@ -64,8 +65,9 @@ body {
     background-color: var(--accent2);
     color: var(--background);
     margin: 0.5em;
-    width: 20em;
-    text-align: center;
+    width: auto;
+    text-align: left;
+    overflow-wrap: break-word;
     padding: 0.5em;
     border-radius: 0.15em;
     cursor: pointer;
@@ -75,4 +77,9 @@ body {
     background-color: var(--background);
     color: var(--foreground);
     font-weight: bold;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
 }

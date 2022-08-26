@@ -73,6 +73,7 @@ body {
     text-align: center;
     padding: 0.5em;
     border-radius: 0.15em;
+    cursor: pointer;
 }
 
 .groceryItem:hover {

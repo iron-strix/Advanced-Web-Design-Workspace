@@ -13,13 +13,70 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.title {
     font-family: 'Roboto Slab', serif;
+    margin: 0.5em;
+    font-size: 4em;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+}
+
+.newGroceryForm {
+    display: flex;
+}
+
+#newGrocery {
+    background-color: var(--foreground);
+    color: var(--comment);
+    padding: 0.3em;
+    width: 20em;
+    font-size: 1.5em;
+    border-radius: 0.25em 0em 0em 0.25em;
+}
+
+#addBtn {
+    background-color: var(--accent);
+    color: var(--background);
+    padding: 0.3em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0em 0.25em 0.25em 0em;
+}
+
+#addBtn:hover {
+    background-color: var(--orangish);
+}
+
+#groceryList {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--comment);
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    border-radius: 0.25em;
+}
+
+.groceryItem {
+    background-color: whitesmoke;
+    color: var(--background);
+    margin: 0.5em;
+    width: 20em;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 0.15em;
+}
+
+.groceryItem:hover {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-weight: bold;
 }
